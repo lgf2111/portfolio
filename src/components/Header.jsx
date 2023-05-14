@@ -5,7 +5,7 @@ const Header = () => {
         <section>
             <header className='container mx-auto mt-5 px-5 flex justify-between'>
                 <div>
-                    <h1 className='text-green-400'>Lee Guan Feng</h1>
+                    <h1 className='text-xl text-green-400'>Lee Guan Feng</h1>
                 </div>
                 <div>
                     <ul className='flex gap-x-5 text-green-600'>

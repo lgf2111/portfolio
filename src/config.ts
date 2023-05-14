@@ -1,0 +1,7 @@
+const socialMediaLinks = {
+  linkedin: "https://www.linkedin.com/in/lee-guan-feng/",
+  github: "https://github.com/lgf2111",
+  instagram: "https://www.instagram.com/lgf2111/",
+};
+
+export default socialMediaLinks;

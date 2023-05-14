@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import socialMediaLinks from '../config';
 
 const Footer = () => {
     return (
@@ -10,18 +11,32 @@ const Footer = () => {
                 <div class="flex flex-wrap text-left lg:text-left">
                     <div class="w-full lg:w-6/12 px-4">
                         <h5 class="text-2xl fonat-semibold text-green-500">Let's keep in touch!</h5>
-                        <div class="mt-3 lg:mb-0 mb-6">
-                            <button class="bg-white shadow-lg font-normal h-9 w-9 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                        <div className="mt-3 lg:mb-0 mb-6 flex">
+                            <a
+                                href={socialMediaLinks.linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-gray-100 shadow-lg font-normal h-9 w-9 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            >
                                 <FontAwesomeIcon icon={faLinkedin} className='text-fuchsia-950' />
-                            </button>
-                            <button class="bg-white shadow-lg font-normal h-9 w-9 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                            </a>
+                            <a
+                                href={socialMediaLinks.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-gray-100 shadow-lg font-normal h-9 w-9 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            >
                                 <FontAwesomeIcon icon={faGithub} className='text-fuchsia-950' />
-                            </button>
-                            <button class="bg-white shadow-lg font-normal h-9 w-9 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                            </a>
+                            <a
+                                href={socialMediaLinks.instagram}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-gray-100 shadow-lg font-normal h-9 w-9 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            >
                                 <FontAwesomeIcon icon={faInstagram} className='text-fuchsia-950' />
-                            </button>
-                        </div>
-                    </div>
+                            </a>
+                        </div>                    </div>
                     <div class="w-full lg:w-6/12 px-4">
                         <div class="flex flex-wrap items-top mb-6">
                             <div class="w-full lg:w-4/12 px-4 ml-auto">

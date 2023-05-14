@@ -1,13 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout";
+import anime from "animejs";
 
 const Home = () => {
+  const [a1Ref, setA1Ref] = useState<ReturnType<typeof anime> | undefined>();
+  const [a2Ref, setA2Ref] = useState<ReturnType<typeof anime> | undefined>();
+
+  useEffect(() => {
+    setA1Ref(
+      anime({
+        targets: "#landing-text",
+        translateX: [-250, 0],
+        duration: 1000,
+        easing: "spring(1, 100, 100, 0)",
+      })
+    );
+  }, []);
+
+  useEffect(() => {
+    setA2Ref(
+      anime({
+        targets: "#landing-image",
+        translateX: [250, 0],
+        duration: 1000,
+        easing: "spring(1, 100, 100, 0)",
+      })
+    );
+  }, []);
+
   return (
     <Layout>
       <div className="flex my-40">
-        <div className="w-1/2 flex flex-col justify-center items-end pr-5 text-right">
+        <div
+          className="w-1/2 flex flex-col justify-center items-end pr-5 text-right"
+          id="landing-text"
+        >
           <h1 className="text-2xl text-green-400">Hi, I'm Guan Feng!</h1>
-          <p className="text-gray-100 w-3/5">
+          <p className="text-gray-100 w-3/5 mt-3">
             I am from <b>Singapore🇸🇬</b> and I love <b>coding👨🏻‍💻</b>. My passion
             is creating beautiful and functional websites and web applications
             using various programming languages such as <b>HTML</b>, <b>CSS</b>,
@@ -16,7 +45,7 @@ const Home = () => {
             and efficient code. Let's build something amazing together!
           </p>
         </div>
-        <div className="w-1/2 pl-5">
+        <div className="w-1/2 pl-5" id="landing-image">
           <img
             src={require("../assets/images/landing.jpg")}
             alt="Image"

@@ -1,8 +1,21 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useWindowScroll } from "react-use";
 
 const Header = () => {
+  const { y } = useWindowScroll();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    setIsScrolled(y > 0);
+  }, [y]);
   return (
-    <header className="fixed top-0 left-0 w-full z-10 mx-auto py-8 px-10 flex justify-between items-end bg-green-950 bg-opacity-30">
+    <header
+      className={`fixed top-0 left-0 w-full z-10 mx-auto py-8 px-10 flex justify-between items-end animated-fade ${
+        isScrolled ? "fade-in" : "fade-out"
+      }`}
+    >
+      {" "}
       <div>
         <Link to="/" className="text-2xl text-green-400 font-bold">
           Lee Guan Feng

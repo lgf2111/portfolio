@@ -31,14 +31,16 @@ const Layout = ({ children }: LayoutProps) => {
   }, [location.pathname]);
 
   return (
-    <div>
-      <Helmet>
-        <title>{pageTitle} - Guan Feng's Portfolio</title>
-      </Helmet>
-      <Header />
-      <main>{children}</main>
+    <>
+      <div className="flex flex-col min-h-screen">
+        <Helmet>
+          <title>{pageTitle} - Guan Feng's Portfolio</title>
+        </Helmet>
+        <Header />
+        <div className="flex-grow">{children}</div>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

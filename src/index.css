@@ -9,23 +9,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #4a044e;
-  animation: gradientAnimation .75s ease-in-out;
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-@keyframes gradientAnimation {
-  0% {
-    background-color: rgb(243 244 246);
-    /* gray-100 */
-  }
-
-  100% {
-    background-color: #4a044e;
-    /* fuchsia-950 */
-  }
 }

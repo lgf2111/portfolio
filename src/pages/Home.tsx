@@ -30,16 +30,18 @@ const Home = () => {
 
   return (
     <Layout>
-      <div className="flex my-40">
+      <div className="flex items-center h-screen">
         <div
           className="w-1/2 flex flex-col justify-center items-end pr-5 text-right"
           id="landing-text"
         >
-          <h1 className="text-2xl text-green-400">Hi, I'm Guan Feng!</h1>
+          <h1 className="text-2xl text-green-400 font-semibold">
+            Hi, I'm Guan Feng!
+          </h1>
           <p className="text-gray-100 w-3/5 mt-3">
             I am from <b>Singapore🇸🇬</b> and I love <b>coding👨🏻‍💻</b>. My passion
             is creating beautiful and functional websites and web applications
-            using various programming languages such as <b>HTML</b>, <b>CSS</b>,
+            using various programming languages such as <b>HTML</b>, <b>CSS</b>,{" "}
             <b>JavaScript</b>, and <b>Python</b>. I strive to stay up-to-date
             with the latest industry trends and always focus on writing clean
             and efficient code. Let's build something amazing together!

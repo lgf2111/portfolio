@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="container mx-auto mt-5 px-5 flex justify-between">
+    <header className="fixed top-0 left-0 w-full z-10 mx-auto py-8 px-10 flex justify-between items-end bg-green-950 bg-opacity-30">
       <div>
-        <h1 className="text-xl text-green-400">Lee Guan Feng</h1>
+        <Link to="/" className="text-2xl text-green-400 font-bold">
+          Lee Guan Feng
+        </Link>
       </div>
       <div>
         <ul className="flex gap-x-5 text-green-600">

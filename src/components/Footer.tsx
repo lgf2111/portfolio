@@ -23,10 +23,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="bg-gray-100 shadow-lg font-normal h-9 w-9 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
               >
-                <FontAwesomeIcon
-                  icon={faLinkedin}
-                  className="text-fuchsia-950"
-                />
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a
                 href={socialMediaLinks.github}
@@ -34,7 +31,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="bg-gray-100 shadow-lg font-normal h-9 w-9 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
               >
-                <FontAwesomeIcon icon={faGithub} className="text-fuchsia-950" />
+                <FontAwesomeIcon icon={faGithub} />
               </a>
               <a
                 href={socialMediaLinks.instagram}
@@ -42,10 +39,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="bg-gray-100 shadow-lg font-normal h-9 w-9 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
               >
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  className="text-fuchsia-950"
-                />
+                <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>{" "}
           </div>

@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet";
+import ScrollToTopButton from "./ScrollToTopButton";
 
 interface LayoutProps {
   children?: ReactNode;
@@ -32,10 +33,11 @@ const Layout = ({ children }: LayoutProps) => {
 
   return (
     <>
+      <Helmet>
+        <title>{pageTitle} - Guan Feng's Portfolio</title>
+      </Helmet>
       <div className="flex flex-col min-h-screen">
-        <Helmet>
-          <title>{pageTitle} - Guan Feng's Portfolio</title>
-        </Helmet>
+        <ScrollToTopButton />
         <Header />
         <div className="flex-grow">{children}</div>
       </div>

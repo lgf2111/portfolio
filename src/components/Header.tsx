@@ -28,7 +28,7 @@ const Header = () => {
               to="/"
               className="group transition-all duration-300 ease-in-out"
             >
-              <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out">
+              <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out font-medium">
                 Home
               </span>
             </Link>
@@ -38,7 +38,7 @@ const Header = () => {
               to="/about"
               className="group transition-all duration-300 ease-in-out"
             >
-              <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out">
+              <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out font-medium">
                 About
               </span>
             </Link>
@@ -48,7 +48,7 @@ const Header = () => {
               to="/projects"
               className="group transition-all duration-300 ease-in-out"
             >
-              <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out">
+              <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out font-medium">
                 Projects
               </span>
             </Link>
@@ -58,7 +58,7 @@ const Header = () => {
               to="/contact"
               className="group transition-all duration-300 ease-in-out"
             >
-              <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out">
+              <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out font-medium">
                 Contact
               </span>
             </Link>

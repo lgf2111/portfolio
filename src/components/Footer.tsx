@@ -5,6 +5,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import socialMediaLinks from "../config";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
         <hr className="border-t-2 border-gray-400 mb-6" />
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="w-full lg:w-6/12 px-4">
-            <h5 className="text-2xl fonat-semibold text-green-500">
+            <h5 className="text-2xl font-semibold text-green-500">
               Let's keep in touch!
             </h5>
             <div className="mt-3 lg:mb-0 mb-6 flex">
@@ -46,41 +47,49 @@ const Footer = () => {
           <div className="w-full lg:w-6/12 px-4">
             <div className="flex flex-wrap items-top mb-6">
               <div className="w-full lg:w-4/12 px-4 ml-auto">
-                <span className="block uppercase text-green-500 text-sm font-semibold mb-2">
+                <span className="block uppercase text-green-500 font-semibold mb-2 text-sm">
                   Useful Links
                 </span>
-                <ul className="list-unstyled">
+                <ul className="list-unstyled text-green-600">
                   <li>
-                    <a
-                      className="text-green-600 hover:text-green-800 font-semibold block pb-2 text-sm"
-                      href="#"
+                    <Link
+                      to="/"
+                      className="group transition-all duration-300 ease-in-out"
                     >
-                      Home
-                    </a>
+                      <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out font-medium text-sm">
+                        Home
+                      </span>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      className="text-green-600 hover:text-green-800 font-semibold block pb-2 text-sm"
-                      href="#"
+                    <Link
+                      to="/about"
+                      className="group transition-all duration-300 ease-in-out"
                     >
-                      About
-                    </a>
+                      <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out font-medium text-sm">
+                        About
+                      </span>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      className="text-green-600 hover:text-green-800 font-semibold block pb-2 text-sm"
-                      href="#"
+                    <Link
+                      to="/projects"
+                      className="group transition-all duration-300 ease-in-out"
                     >
-                      Projects
-                    </a>
+                      <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out font-medium text-sm">
+                        Projects
+                      </span>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      className="text-green-600 hover:text-green-800 font-semibold block pb-2 text-sm"
-                      href="#"
+                    <Link
+                      to="/contact"
+                      className="group transition-all duration-300 ease-in-out"
                     >
-                      Contact
-                    </a>
+                      <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out font-medium text-sm">
+                        Contact
+                      </span>
+                    </Link>
                   </li>
                 </ul>
               </div>

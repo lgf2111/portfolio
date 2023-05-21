@@ -4,41 +4,12 @@ import anime from "animejs";
 import timelineData from "../assets/data/timeline.json";
 
 const About = () => {
-  const [animationRefs, setAnimationRefs] = useState<
-    (ReturnType<typeof anime> | undefined)[]
-  >([]);
-
-  useEffect(() => {
-    const refs = timelineData.map(() => undefined);
-    setAnimationRefs(refs);
-  }, []);
-
-  useEffect(() => {
-    timelineData.forEach((item, index) => {
-      setAnimationRefs((prevRefs) => {
-        if (prevRefs[index]) {
-          // Skip if animation reference already exists
-          return prevRefs;
-        }
-
-        const animationRef = anime({
-          targets: `#data-${index}`,
-          translateX: index % 2 === 0 ? [-500, 0] : [500, 0],
-          duration: 1000,
-          easing: "spring(1, 100, 100, 0)",
-          delay: index * 500, // Delay each animation based on index
-        });
-
-        return prevRefs.map((ref, refIndex) =>
-          refIndex === index ? animationRef : ref
-        );
-      });
-    });
-  }, []);
-
   const [a1Ref, setA1Ref] = useState<ReturnType<typeof anime> | undefined>();
   const [a2Ref, setA2Ref] = useState<ReturnType<typeof anime> | undefined>();
   const [a3Ref, setA3Ref] = useState<ReturnType<typeof anime> | undefined>();
+  const [a4Ref, setA4Ref] = useState<(ReturnType<typeof anime> | undefined)[]>(
+    []
+  );
 
   useEffect(() => {
     setA1Ref(
@@ -71,8 +42,37 @@ const About = () => {
         direction: "alternate",
         loop: true,
         easing: "easeInOutSine",
+        delay: 2000,
       })
     );
+  }, []);
+
+  useEffect(() => {
+    const refs = timelineData.map(() => undefined);
+    setA4Ref(refs);
+  }, []);
+
+  useEffect(() => {
+    timelineData.forEach((item, index) => {
+      setA4Ref((prevRefs) => {
+        if (prevRefs[index]) {
+          // Skip if animation reference already exists
+          return prevRefs;
+        }
+
+        const animationRef = anime({
+          targets: `#data-${index}`,
+          translateX: index % 2 === 0 ? [-500, 0] : [500, 0],
+          duration: 1000,
+          easing: "spring(1, 100, 100, 0)",
+          delay: index * 500, // Delay each animation based on index
+        });
+
+        return prevRefs.map((ref, refIndex) =>
+          refIndex === index ? animationRef : ref
+        );
+      });
+    });
   }, []);
 
   return (

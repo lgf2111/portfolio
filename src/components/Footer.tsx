@@ -5,7 +5,7 @@ import {
   faGithub,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import socialMediaLinks from "../config";
+import socialMediaLinks from "../assets/data/socialMediaLinks.json";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

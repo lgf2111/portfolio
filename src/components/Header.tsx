@@ -15,7 +15,6 @@ const Header = () => {
         isScrolled ? "fade-in" : "fade-out"
       }`}
     >
-      {" "}
       <div>
         <Link to="/" className="text-2xl text-green-400 font-bold">
           Lee Guan Feng

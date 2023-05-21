@@ -41,7 +41,7 @@ const Home = () => {
           <p className="text-gray-100 w-3/5 mt-3">
             I am from <b>Singapore🇸🇬</b> and I love <b>coding👨🏻‍💻</b>. My passion
             is creating beautiful and functional websites and web applications
-            using various programming languages such as <b>HTML</b>, <b>CSS</b>,{" "}
+            using various programming languages such as <b>HTML</b>, <b>CSS</b>,
             <b>JavaScript</b>, and <b>Python</b>. I strive to stay up-to-date
             with the latest industry trends and always focus on writing clean
             and efficient code. Let's build something amazing together!

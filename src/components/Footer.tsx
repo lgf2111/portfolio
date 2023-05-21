@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import {
   faLinkedin,
   faGithub,
@@ -8,6 +9,26 @@ import socialMediaLinks from "../config";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  interface SocialMediaButtonProps {
+    link: string;
+    icon: IconProp;
+  }
+
+  const SocialMediaButton: React.FC<SocialMediaButtonProps> = ({
+    link,
+    icon,
+  }) => {
+    return (
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-gray-100 h-9 w-9 flex items-center justify-center align-center rounded-full mr-2 hover:shadow-md hover:shadow-white transition-all duration-300 ease-in-out"
+      >
+        <FontAwesomeIcon icon={icon} />
+      </a>
+    );
+  };
   return (
     <footer className="relative pt-8 pb-6">
       <div className="container mx-auto">
@@ -18,31 +39,19 @@ const Footer = () => {
               Let's keep in touch!
             </h5>
             <div className="mt-3 lg:mb-0 mb-6 flex">
-              <a
-                href={socialMediaLinks.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gray-100 shadow-lg font-normal h-9 w-9 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </a>
-              <a
-                href={socialMediaLinks.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gray-100 shadow-lg font-normal h-9 w-9 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-              >
-                <FontAwesomeIcon icon={faGithub} />
-              </a>
-              <a
-                href={socialMediaLinks.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gray-100 shadow-lg font-normal h-9 w-9 flex items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-              >
-                <FontAwesomeIcon icon={faInstagram} />
-              </a>
-            </div>{" "}
+              <SocialMediaButton
+                link={socialMediaLinks.linkedin}
+                icon={faLinkedin}
+              />
+              <SocialMediaButton
+                link={socialMediaLinks.github}
+                icon={faGithub}
+              />
+              <SocialMediaButton
+                link={socialMediaLinks.instagram}
+                icon={faInstagram}
+              />
+            </div>
           </div>
           <div className="w-full lg:w-6/12 px-4">
             <div className="flex flex-wrap items-top mb-6">

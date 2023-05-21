@@ -2,7 +2,7 @@ import { ReactNode, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import ScrollToTopButton from "./ScrollToTopButton";
 
 interface LayoutProps {
@@ -32,7 +32,7 @@ const Layout = ({ children }: LayoutProps) => {
   }, [location.pathname]);
 
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <title>{pageTitle} - Guan Feng's Portfolio</title>
       </Helmet>
@@ -42,7 +42,7 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="flex-grow">{children}</div>
       </div>
       <Footer />
-    </>
+    </HelmetProvider>
   );
 };
 

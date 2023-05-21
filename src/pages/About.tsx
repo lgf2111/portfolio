@@ -1,33 +1,7 @@
 import { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import anime from "animejs";
-
-const timelineData = [
-  {
-    year: "2020",
-    title: "GCE O-level",
-    school: "Woodgrove Secondary School",
-    duration: "2017 - 2020 (4 years)",
-    description:
-      "Studied at Woodgrove Secondary School from 2017, taken GCE O-Level and graduated in 2020.",
-  },
-  {
-    year: "2023",
-    title: "Digital Business Analyst Intern",
-    company: "Prime Minister Office - Strategy Group",
-    duration: "03/2023 - 08/2023 (6 months)",
-    description:
-      "Worked at Prime Minister Office - Strategy Group as a Digital Business Analyst Intern under a 6-month contract.",
-  },
-  {
-    year: "2024",
-    title: "Cybersecurity & Digital Forensics",
-    school: "Nanyang Polytechnic",
-    duration: "2021 - 2024 (3 years)",
-    description:
-      "Studying Cybersecurity and Digital Forensics Course at Nanyang Polytechnic from 2021 to 2024.",
-  },
-];
+import timelineData from "../assets/data/timeline.json";
 
 const About = () => {
   const [animationRefs, setAnimationRefs] = useState<
@@ -97,7 +71,6 @@ const About = () => {
         direction: "alternate",
         loop: true,
         easing: "easeInOutSine",
-        delay: 2000,
       })
     );
   }, []);

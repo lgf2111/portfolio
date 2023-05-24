@@ -62,7 +62,7 @@ const About = () => {
 
         const animationRef = anime({
           targets: `#data-${index}`,
-          translateX: index % 2 === 0 ? [-500, 0] : [500, 0],
+          translateX: index % 2 === 0 ? [-1000, 0] : [1000, 0],
           duration: 1000,
           easing: "spring(1, 100, 100, 0)",
           delay: index * 500, // Delay each animation based on index

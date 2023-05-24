@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import emailjs from "emailjs-com";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,6 +7,7 @@ import {
   faEnvelope,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
+import anime from "animejs";
 
 const Contact = () => {
   function sendEmail(e: any) {
@@ -31,11 +32,49 @@ const Contact = () => {
       );
   }
 
+  const [a1Ref, setA1Ref] = useState<ReturnType<typeof anime> | undefined>();
+  const [a2Ref, setA2Ref] = useState<ReturnType<typeof anime> | undefined>();
+  const [a3Ref, setA3Ref] = useState<ReturnType<typeof anime> | undefined>();
+
+  useEffect(() => {
+    setA1Ref(
+      anime({
+        targets: "#contactMeBox",
+        scale: [0, 1],
+        duration: 1500,
+      })
+    );
+    setA2Ref(
+      anime({
+        targets: "#contactMe",
+        scaleX: [1.25, 1],
+        translateX: [-40, 0],
+        duration: 1500,
+        easing: "spring(1, 100, 100, 0)",
+        delay: 1500,
+      })
+    );
+    setA3Ref(
+      anime({
+        targets: "#myInformationBox",
+        translateX: [-100, "-10rem"],
+        translateY: ["-2.5rem", "-2.5rem"],
+
+        duration: 1500,
+        easing: "spring(1, 100, 100, 0)",
+        delay: 1200,
+      })
+    );
+  }, []);
+
   return (
     <Layout>
       <div className="flex items-center justify-center h-screen">
-        <div className="bg-green-100 rounded-lg p-6 flex relative">
-          <div className="w-64 absolute -translate-x-40 -translate-y-10">
+        <div
+          className="bg-green-100 rounded-lg p-6 flex relative"
+          id="contactMeBox"
+        >
+          <div className="w-64 absolute" id="myInformationBox">
             <div className="bg-green-300 rounded-lg p-6 me-3">
               <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-green-600 to-green-300 bg-[length:100%_3px] bg-no-repeat bg-bottom">
                 My Information
@@ -59,7 +98,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="ms-24 w-96">
+          <div className="ms-24 w-96" id="contactMe">
             <h2 className="text-2xl font-bold mb-4 pe-24 bg-gradient-to-r from-green-500 to-green-100 bg-[length:100%_3px] bg-no-repeat bg-bottom">
               Contact Me
             </h2>

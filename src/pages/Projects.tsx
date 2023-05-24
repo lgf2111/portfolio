@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
     setA1Ref(
       anime({
         targets: ".card",
-        translateY: [600, 0],
+        translateY: [1000, 0],
         duration: 1000,
         easing: "spring(1, 100, 100, 0)",
         delay: anime.stagger(100),

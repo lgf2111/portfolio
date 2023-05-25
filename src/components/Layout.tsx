@@ -16,16 +16,16 @@ const Layout = ({ children }: LayoutProps) => {
   useEffect(() => {
     // Set the page title based on the current route
     switch (location.pathname) {
-      case "/":
+      case "/portfolio/":
         setPageTitle("Home");
         break;
-      case "/about":
+      case "/portfolio/about":
         setPageTitle("About");
         break;
-      case "/projects":
+      case "/portfolio/projects":
         setPageTitle("Projects");
         break;
-      case "/contact":
+      case "/portfolio/contact":
         setPageTitle("Contact");
         break;
     }

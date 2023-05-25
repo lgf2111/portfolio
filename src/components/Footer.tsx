@@ -62,7 +62,7 @@ const Footer = () => {
                 <ul className="list-unstyled text-green-600">
                   <li>
                     <Link
-                      to="/"
+                      to="/portfolio/"
                       className="group transition-all duration-300 ease-in-out"
                     >
                       <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out font-medium text-sm">
@@ -72,7 +72,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      to="/about"
+                      to="/portfolio/about"
                       className="group transition-all duration-300 ease-in-out"
                     >
                       <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out font-medium text-sm">
@@ -82,7 +82,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      to="/projects"
+                      to="/portfolio/projects"
                       className="group transition-all duration-300 ease-in-out"
                     >
                       <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out font-medium text-sm">
@@ -92,7 +92,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      to="/contact"
+                      to="/portfolio/contact"
                       className="group transition-all duration-300 ease-in-out"
                     >
                       <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out font-medium text-sm">

@@ -51,9 +51,9 @@ const Projects: React.FC = () => {
 
   return (
     <Layout>
-      <div className="flex items-center h-screen justify-center mt-10">
+      <div className="flex flex-col md:flex-row items-center h-screen justify-center mt-10">
         {projects.map(({ image, title, description, link }, index) => (
-          <div key={index} className="w-80 flex justify-center">
+          <div key={index} className="my-3 md:my-0 md:w-80 flex justify-center">
             <ProjectCard {...{ image, title, description, link }} />
           </div>
         ))}

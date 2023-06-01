@@ -67,6 +67,26 @@ const Contact = () => {
     );
   }, []);
 
+  const [contactMeId, setContactMeId] = useState("");
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      if (window.innerWidth > 768) {
+        setContactMeId("contactMe");
+      } else {
+        setContactMeId("");
+      }
+    };
+
+    handleWindowResize(); // Set initial value on component mount
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
   return (
     <Layout>
       <div className="flex items-center justify-center h-screen">
@@ -74,7 +94,10 @@ const Contact = () => {
           className="bg-green-100 rounded-lg p-6 flex relative"
           id="contactMeBox"
         >
-          <div className="w-64 absolute" id="myInformationBox">
+          <div
+            className="w-64 absolute invisible md:visible"
+            id="myInformationBox"
+          >
             <div className="bg-green-300 rounded-lg p-6 me-3">
               <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-green-600 to-green-300 bg-[length:100%_3px] bg-no-repeat bg-bottom">
                 My Information
@@ -98,7 +121,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="ms-24 w-96" id="contactMe">
+          <div className="md:ms-24 w-96" id={contactMeId}>
             <h2 className="text-2xl font-bold mb-4 pe-24 bg-gradient-to-r from-green-500 to-green-100 bg-[length:100%_3px] bg-no-repeat bg-bottom">
               Contact Me
             </h2>
@@ -127,7 +150,7 @@ const Contact = () => {
               ></textarea>
               <div className="grid grid-cols-2 mt-1">
                 <input
-                  className="text-white bg-green-400 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium text-sm sm:w-auto py-1.5 text-center w-1/2"
+                  className="text-white bg-green-400 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium text-sm py-1.5 text-center w-1/2"
                   type="submit"
                   value="Send Message"
                 />

@@ -1,3 +1,4 @@
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -29,16 +30,17 @@ const Footer = () => {
       </a>
     );
   };
+
   return (
     <footer className="relative pt-8 pb-6">
       <div className="container mx-auto">
         <hr className="border-t-2 border-gray-400 mb-6" />
-        <div className="flex flex-wrap text-left lg:text-left">
-          <div className="w-full lg:w-6/12 px-4">
-            <h5 className="text-2xl font-semibold text-green-500">
+        <div className="flex flex-wrap text-center sm:text-left">
+          <div className="w-full sm:w-6/12 mb-3 sm:mb-0 px-4">
+            <h5 className="text-2xl font-semibold text-green-500 mb-3">
               Let's keep in touch!
             </h5>
-            <div className="mt-3 lg:mb-0 mb-6 flex">
+            <div className="flex justify-center sm:justify-start">
               <SocialMediaButton
                 link={socialMediaLinks.linkedin}
                 icon={faLinkedin}
@@ -53,9 +55,9 @@ const Footer = () => {
               />
             </div>
           </div>
-          <div className="w-full lg:w-6/12 px-4">
-            <div className="flex flex-wrap items-top mb-6">
-              <div className="w-full lg:w-4/12 px-4 ml-auto">
+          <div className="w-full sm:w-6/12 px-4">
+            <div className="flex flex-wrap items-top mb-6 justify-center sm:justify-end">
+              <div className="w-full sm:w-4/12 px-4">
                 <span className="block uppercase text-green-500 font-semibold mb-2 text-sm">
                   Useful Links
                 </span>

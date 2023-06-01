@@ -32,13 +32,13 @@ const Home = () => {
     <Layout>
       <div className="flex items-center h-screen">
         <div
-          className="w-1/2 flex flex-col justify-center items-end pr-5 text-right"
+          className="sm:w-1/2 flex flex-col justify-center items-start sm:items-end pl-10 sm:pr-5 sm:text-right"
           id="landing-text"
         >
           <h1 className="text-2xl text-green-400 font-semibold">
             Hi, I'm Guan Feng!
           </h1>
-          <p className="text-gray-100 w-3/5 mt-3">
+          <p className="text-gray-100 sm:w-3/5 mt-3">
             I am from <b>Singapore🇸🇬</b> and I love <b>coding👨🏻‍💻</b>. My passion
             is creating beautiful and functional websites and web applications
             using various programming languages such as <b>HTML</b>, <b>CSS</b>,
@@ -47,7 +47,7 @@ const Home = () => {
             and efficient code. Let's build something amazing together!
           </p>
         </div>
-        <div className="w-1/2 pl-5" id="landing-image">
+        <div className="invisible sm:visible sm:w-1/2 pl-5" id="landing-image">
           <img
             src={require("../assets/images/landing.jpg")}
             alt="Image"

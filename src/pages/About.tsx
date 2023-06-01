@@ -80,27 +80,27 @@ const About = () => {
       <div className="container mx-auto w-full h-full mt-20">
         <div className="relative wrap overflow-hidden p-10 h-full">
           <div
-            className="border-2 absolute border-green-400 h-full left-1/2"
+            className="border-2 absolute border-green-400 h-full left-16 translate-x-1 sm:translate-x-0 sm:left-1/2"
             id="line"
           ></div>
 
           {timelineData.map((item, index) => (
             <div
               key={index}
-              className={`mb-8 flex justify-between ${
-                index % 2 === 0 ? "flex-row-reverse" : ""
+              className={`mb-8 flex justify-start sm:justify-between ${
+                index % 2 === 0 ? "sm:flex-row-reverse" : ""
               } items-center w-full ${
                 index % 2 === 0 ? "left-timeline" : "right-timeline"
               }`}
             >
-              <div className="order-1 w-5/12"></div>
+              <div className="order-1 sm:w-5/12"></div>
               <div className="z-20 flex items-center order-1 bg-green-400 shadow-xl rounded-lg px-2 py-1">
                 <h1 className="mx-auto text-gray-100 font-semibold text-lg">
                   {item.year}
                 </h1>
               </div>
               <div
-                className="order-1 bg-green-200 rounded-lg shadow-xl w-5/12 px-6 py-4 data"
+                className="ms-5 sm:ms-0 order-1 bg-green-200 rounded-lg shadow-xl sm:w-5/12 px-6 py-4 data"
                 id={"data-" + index.toString()}
               >
                 <h3 className="font-bold text-gray-700 text-xl">
@@ -128,7 +128,7 @@ const About = () => {
         </div>
         <div className="relative overflow-hidden h-3">
           <div
-            className="absolute bg-gray-200  h-3 w-3 left-1/2 -translate-x-1 rotate-45 -translate-y-1/2"
+            className="absolute bg-gray-200  h-3 w-3 left-16 sm:left-1/2 sm:-translate-x-1 rotate-45 -translate-y-1/2"
             id="arrow"
           ></div>
         </div>

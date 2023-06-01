@@ -11,10 +11,6 @@ const Header = () => {
     setIsScrolled(y > 0);
   }, [y]);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
     <header
       className={`fixed top-0 left-0 w-full z-10 mx-auto py-8 px-10 sm:flex sm:justify-between sm:items-end animated-fade ${

@@ -5,7 +5,6 @@ import { useWindowScroll } from "react-use";
 const Header = () => {
   const { y } = useWindowScroll();
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     setIsScrolled(y > 0);

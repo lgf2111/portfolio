@@ -11,7 +11,7 @@ interface Project {
 }
 
 const Projects: React.FC = () => {
-  const [a1Ref, setA1Ref] = useState<ReturnType<typeof anime> | undefined>();
+  const [, setA1Ref] = useState<ReturnType<typeof anime> | undefined>();
 
   useEffect(() => {
     setA1Ref(
@@ -51,7 +51,7 @@ const Projects: React.FC = () => {
 
   return (
     <Layout>
-      <div className="flex flex-col md:flex-row items-center h-screen justify-center mt-10">
+      <div className="flex flex-col md:flex-row items-center md:h-screen justify-center mt-24 md:mt-10">
         {projects.map(({ image, title, description, link }, index) => (
           <div key={index} className="my-3 md:my-0 md:w-80 flex justify-center">
             <ProjectCard {...{ image, title, description, link }} />

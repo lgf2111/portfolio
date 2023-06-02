@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <img src={image} alt={title} className="w-52 max-h-52" />
       </div>
       <div className="flex flex-col md:block ms-5 md:ms-0">
-        <a href="#">
+        <a href={link}>
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">
             {title}
           </h5>

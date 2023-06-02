@@ -32,9 +32,9 @@ const Contact = () => {
       );
   }
 
-  const [a1Ref, setA1Ref] = useState<ReturnType<typeof anime> | undefined>();
-  const [a2Ref, setA2Ref] = useState<ReturnType<typeof anime> | undefined>();
-  const [a3Ref, setA3Ref] = useState<ReturnType<typeof anime> | undefined>();
+  const [, setA1Ref] = useState<ReturnType<typeof anime> | undefined>();
+  const [, setA2Ref] = useState<ReturnType<typeof anime> | undefined>();
+  const [, setA3Ref] = useState<ReturnType<typeof anime> | undefined>();
 
   useEffect(() => {
     setA1Ref(
@@ -89,7 +89,7 @@ const Contact = () => {
 
   return (
     <Layout>
-      <div className="flex items-center justify-center h-screen">
+      <div className="flex items-center justify-center h-screen mx-5">
         <div
           className="bg-green-100 rounded-lg p-6 flex relative"
           id="contactMeBox"
@@ -121,7 +121,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="md:ms-24 w-96" id={contactMeId}>
+          <div className="md:ms-24 md:w-96" id={contactMeId}>
             <h2 className="text-2xl font-bold mb-4 pe-24 bg-gradient-to-r from-green-500 to-green-100 bg-[length:100%_3px] bg-no-repeat bg-bottom">
               Contact Me
             </h2>
@@ -148,9 +148,9 @@ const Contact = () => {
                 placeholder="Message*"
                 name="message"
               ></textarea>
-              <div className="grid grid-cols-2 mt-1">
+              <div className="grid md:grid-cols-2 mt-1">
                 <input
-                  className="text-white bg-green-400 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium text-sm py-1.5 text-center w-1/2"
+                  className="text-white bg-green-400 hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium text-sm py-1.5 text-center md:w-1/2"
                   type="submit"
                   value="Send Message"
                 />

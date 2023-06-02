@@ -3,8 +3,8 @@ import Layout from "../components/Layout";
 import anime from "animejs";
 
 const Home = () => {
-  const [a1Ref, setA1Ref] = useState<ReturnType<typeof anime> | undefined>();
-  const [a2Ref, setA2Ref] = useState<ReturnType<typeof anime> | undefined>();
+  const [, setA1Ref] = useState<ReturnType<typeof anime> | undefined>();
+  const [, setA2Ref] = useState<ReturnType<typeof anime> | undefined>();
 
   useEffect(() => {
     setA1Ref(
@@ -50,7 +50,7 @@ const Home = () => {
         <div className="invisible sm:visible sm:w-1/2 pl-5" id="landing-image">
           <img
             src={require("../assets/images/landing.jpg")}
-            alt="Image"
+            alt="Landing"
             className="w-80 h-80 object-cover rounded-lg"
           />
         </div>

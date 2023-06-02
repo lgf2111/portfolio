@@ -4,12 +4,10 @@ import anime from "animejs";
 import timelineData from "../assets/data/timeline.json";
 
 const About = () => {
-  const [a1Ref, setA1Ref] = useState<ReturnType<typeof anime> | undefined>();
-  const [a2Ref, setA2Ref] = useState<ReturnType<typeof anime> | undefined>();
-  const [a3Ref, setA3Ref] = useState<ReturnType<typeof anime> | undefined>();
-  const [a4Ref, setA4Ref] = useState<(ReturnType<typeof anime> | undefined)[]>(
-    []
-  );
+  const [, setA1Ref] = useState<ReturnType<typeof anime> | undefined>();
+  const [, setA2Ref] = useState<ReturnType<typeof anime> | undefined>();
+  const [, setA3Ref] = useState<ReturnType<typeof anime> | undefined>();
+  const [, setA4Ref] = useState<(ReturnType<typeof anime> | undefined)[]>([]);
 
   useEffect(() => {
     setA1Ref(

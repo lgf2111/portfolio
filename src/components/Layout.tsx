@@ -34,7 +34,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>{pageTitle} - Guan Feng's Portfolio</title>
+        <title>{pageTitle} - Jeff Lee's Portfolio</title>
       </Helmet>
       <div className="flex flex-col min-h-screen">
         <ScrollToTopButton />

@@ -36,7 +36,7 @@ const Home = () => {
           id="landing-text"
         >
           <h1 className="text-2xl text-green-400 font-semibold">
-            Hi, I'm Guan Feng!
+            Hi, I'm Jeff Lee!
           </h1>
           <p className="text-gray-100 sm:w-3/5 mt-3">
             I am from <b>Singapore🇸🇬</b> and I love <b>coding👨🏻‍💻</b>. My passion

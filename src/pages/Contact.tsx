@@ -102,7 +102,7 @@ const Contact = () => {
               <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-green-600 to-green-300 bg-[length:100%_3px] bg-no-repeat bg-bottom">
                 My Information
               </h2>
-              <h3 className="text-lg font-semibold">Lee Guan Feng</h3>
+              <h3 className="text-lg font-semibold">Jeff Lee</h3>
               <div className="flex items-center">
                 <FontAwesomeIcon icon={faPhone} className="me-1 w-4" />
                 <a className="underline" href="tel:+6588128123">

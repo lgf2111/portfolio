@@ -18,7 +18,7 @@ const Header = () => {
     >
       <div>
         <Link to="/portfolio/" className="text-2xl text-green-400 font-bold">
-          Lee Guan Feng
+          Jeff Lee
         </Link>
       </div>
       <div>

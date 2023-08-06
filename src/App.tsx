@@ -7,20 +7,20 @@ import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
   {
-    path: "/portfolio/",
+    path: "//",
     element: <Home />,
     errorElement: <Error />,
   },
   {
-    path: "/portfolio/about",
+    path: "//about",
     element: <About />,
   },
   {
-    path: "/portfolio/projects",
+    path: "//projects",
     element: <Projects />,
   },
   {
-    path: "/portfolio/contact",
+    path: "//contact",
     element: <Contact />,
   },
 ]);

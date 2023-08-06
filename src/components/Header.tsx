@@ -17,7 +17,7 @@ const Header = () => {
       }`}
     >
       <div>
-        <Link to="/portfolio/" className="text-2xl text-green-400 font-bold">
+        <Link to="//" className="text-2xl text-green-400 font-bold">
           Jeff Lee
         </Link>
       </div>
@@ -25,7 +25,7 @@ const Header = () => {
         <ul className="flex gap-x-5 text-green-600">
           <li>
             <Link
-              to="/portfolio/"
+              to="//"
               className="group transition-all duration-300 ease-in-out whitespace-nowrap"
             >
               <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out font-medium">
@@ -35,7 +35,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to="/portfolio/about"
+              to="//about"
               className="group transition-all duration-300 ease-in-out whitespace-nowrap"
             >
               <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out font-medium">
@@ -45,7 +45,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to="/portfolio/projects"
+              to="//projects"
               className="group transition-all duration-300 ease-in-out whitespace-nowrap"
             >
               <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out font-medium">
@@ -55,7 +55,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to="/portfolio/contact"
+              to="//contact"
               className="group transition-all duration-300 ease-in-out whitespace-nowrap"
             >
               <span className="bg-left-bottom bg-gradient-to-r from-green-600 to-green-400 bg-[length:0%_1px] bg-no-repeat group-hover:bg-[length:100%_1px] group-hover:text-green-400 transition-all duration-500 ease-out font-medium">

@@ -1,23 +1,9 @@
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
-  const [showScroller, setShowScroller] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const isAtTop = window.scrollY === 0;
-      setShowScroller(isAtTop);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -42,11 +28,7 @@ const Hero = () => {
 
       <ComputersCanvas />
 
-      <div
-        className={`absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center transition-opacity ease-in duration-100 opacity-${
-          showScroller ? 100 : 0
-        }`}
-      >
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div

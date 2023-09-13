@@ -4,19 +4,16 @@ import {
     creator,
     web,
 
-    html,
-    css,
-    javascript,
-    typescript,
+    aws,
     python,
-    git,
-    mysql,
     flutter,
+    mysql,
+    git,
+    typescript,
 
     nyp,
 
     pmosg,
-    // tesla,
 
     leroytan,
     chongyangbin,
@@ -91,16 +88,13 @@ const experiences = [
         ],
     },
     // {
-    //     title: "React Native Developer",
-    //     company_name: "Tesla",
-    //     icon: tesla,
+    //     title: "",
+    //     company_name: "",
+    //     icon: _,
     //     iconBg: "#E6DEDD",
-    //     date: "Jan 2021 - Feb 2022",
+    //     date: "",
     //     points: [
-    //         "Developing and maintaining web applications using React.js and other related technologies.",
-    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //         "Implementing responsive design and ensuring cross-browser compatibility.",
-    //         "Participating in code reviews and providing constructive feedback to other developers.",
+    //         "",
     //     ],
     // },
 ];
@@ -119,54 +113,42 @@ const educations = [
         ],
     },
     // {
-    //     title: "React Native Developer",
-    //     company_name: "Tesla",
-    //     icon: tesla,
+    //     title: "",
+    //     company_name: "",
+    //     icon: _,
     //     iconBg: "#383E56",
-    //     date: "Jan 2021 - Feb 2022",
+    //     date: "",
     //     points: [
-    //         "Developing and maintaining web applications using React.js and other related technologies.",
-    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-    //         "Implementing responsive design and ensuring cross-browser compatibility.",
-    //         "Participating in code reviews and providing constructive feedback to other developers.",
+    //         "",
     //     ],
     // },
 ];
 
 const technologies = [
     {
-        name: "HTML 5",
-        icon: html,
-    },
-    {
-        name: "CSS 3",
-        icon: css,
-    },
-    {
-        name: "JavaScript",
-        icon: javascript,
-    },
-    {
-        name: "TypeScript",
-        icon: typescript,
+        name: "AWS",
+        icon: aws,
     },
     {
         name: "Python",
         icon: python,
     },
     {
-        name: "Flutter",
-        icon: flutter,
+        name: "TypeScript",
+        icon: typescript,
     },
     {
-        name: "git",
-        icon: git,
+        name: "Flutter",
+        icon: flutter,
     },
     {
         name: "MySQL",
         icon: mysql,
     },
-
+    {
+        name: "git",
+        icon: git,
+    },
 ];
 
 

@@ -7,10 +7,8 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
+import aws from "./tech/aws.svg";
 import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
 import typescript from "./tech/typescript.png";
 import mysql from "./tech/mysql.png";
 import python from "./tech/python.png";
@@ -19,7 +17,6 @@ import flutter from "./tech/flutter.png";
 import nyp from "./school/nyp.webp";
 
 import pmosg from "./company/pmosg.png";
-import tesla from "./company/tesla.png";
 
 import leroytan from "./people/leroytan.jpeg";
 import chongyangbin from "./people/chongyangbin.jpeg";
@@ -41,9 +38,7 @@ export {
   menu,
   close,
 
-  html,
-  css,
-  javascript,
+  aws,
   typescript,
   python,
   git,
@@ -51,7 +46,6 @@ export {
   flutter,
 
   pmosg,
-  tesla,
 
   nyp,
 

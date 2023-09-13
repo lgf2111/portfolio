@@ -38,8 +38,6 @@ import {
     azure,
     alibabacloud,
 
-
-
     nyp,
 
     pmosg,
@@ -51,6 +49,11 @@ import {
     lovelace,
     flaskblogsecure,
     visioncore,
+    timerplus,
+    djangostore,
+    thesolarsystem,
+    careermeet,
+    lecturesummariser,
 
 } from "../assets";
 
@@ -322,37 +325,6 @@ const technologies = [
 
 ];
 
-
-const testimonials = [
-    {
-        testimonial:
-            "I would like to give a huge thanks to Jeff. With his expertise and aid, my website application was developed on time.",
-        name: "Leroy Tan",
-        designation: "Student",
-        company: "NYP",
-        // image: "https://media.licdn.com/dms/image/D5603AQFK1q_NUB_ikA/profile-displayphoto-shrink_400_400/0/1670773450417?e=1700092800&v=beta&t=yyumX6lC0YBXPKUJi83XnqEkuPjHuRSHGlwmrATrFsQ",
-        image: leroytan,
-    },
-    {
-        testimonial:
-            "Jeff had developed a website application for me and it works great.",
-        name: "Chong Yang Bin",
-        designation: "Director",
-        company: "SGWIFIMAN",
-        // image: "https://media.licdn.com/dms/image/C5603AQG7SALleeXdQA/profile-displayphoto-shrink_400_400/0/1649961149696?e=1700092800&v=beta&t=hrFoP_pMaYh7hBuVzU4YXAHEBVRa4f43XLSXnvaX7lU",
-        image: chongyangbin,
-    },
-    {
-        testimonial:
-            "Jeff is really knowledgeable when it comes to full-stack web applications. I have previously sought his expertise in developing a full stack application to provision cloud resources more efficiently. Not only did he meet the given deadline, but also went the extra mile and added improvements to my UI design. Will definitely work with him in the future!",
-        name: "Liang Shaoze",
-        designation: "Former COO",
-        company: "MAKRISEN",
-        // image: "https://media.licdn.com/dms/image/D5603AQFJQn14UVGc9A/profile-displayphoto-shrink_400_400/0/1692525287384?e=1700092800&v=beta&t=SluAOQ3dsymvsa02QD5T9EDeVs3Z4L3t6NzeuZPGkZY",
-        image: liangshaoze,
-    },
-];
-
 const projects = [
     {
         name: "Lovelace",
@@ -364,7 +336,7 @@ const projects = [
                 color: "blue-text-gradient",
             },
             {
-                name: "python",
+                name: "flask",
                 color: "blue-text-gradient",
             },
             {
@@ -424,6 +396,129 @@ const projects = [
         ],
         image: visioncore,
         source_code_link: "https://github.com/lgf2111/vision-core",
+    },
+    {
+        name: "Timer Plus",
+        description:
+            "A website for setting timers with voice alerts for important moments.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "typescript",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: timerplus,
+        source_code_link: "https://github.com/lgf2111/timer-plus",
+    },
+    {
+        name: "Django Store",
+        description:
+            "Website application e-commerce platform built With Django.",
+        tags: [
+            {
+                name: "django",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "bootstrap",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: djangostore,
+        source_code_link: "https://github.com/lgf2111/django-store",
+    },
+    {
+        name: "The Solar System",
+        description:
+            "View the solar system in 3D.",
+        tags: [
+            {
+                name: "vite",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "threejs",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: thesolarsystem,
+        source_code_link: "https://github.com/lgf2111/the-solar-system",
+    },
+    {
+        name: "Career Meet",
+        description:
+            "Meetup, with University Students.",
+        tags: [
+            {
+                name: "django",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "bootstrap",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: careermeet,
+        source_code_link: "https://github.com/lgf2111/career-meet",
+    },
+    {
+        name: "Lecture Summariser",
+        description:
+            "Upload your lecture videos and we will summarise them for you.",
+        tags: [
+            {
+                name: "openai",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "django",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "bootstrap",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "jquery",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: lecturesummariser,
+        source_code_link: "https://github.com/lgf2111/django-store",
+    },
+];
+
+const testimonials = [
+    {
+        testimonial:
+            "I would like to give a huge thanks to Jeff. With his expertise and aid, my website application was developed on time.",
+        name: "Leroy Tan",
+        designation: "Student",
+        company: "NYP",
+        // image: "https://media.licdn.com/dms/image/D5603AQFK1q_NUB_ikA/profile-displayphoto-shrink_400_400/0/1670773450417?e=1700092800&v=beta&t=yyumX6lC0YBXPKUJi83XnqEkuPjHuRSHGlwmrATrFsQ",
+        image: leroytan,
+    },
+    {
+        testimonial:
+            "Jeff had developed a website application for me and it works great.",
+        name: "Chong Yang Bin",
+        designation: "Director",
+        company: "SGWIFIMAN",
+        // image: "https://media.licdn.com/dms/image/C5603AQG7SALleeXdQA/profile-displayphoto-shrink_400_400/0/1649961149696?e=1700092800&v=beta&t=hrFoP_pMaYh7hBuVzU4YXAHEBVRa4f43XLSXnvaX7lU",
+        image: chongyangbin,
+    },
+    {
+        testimonial:
+            "Jeff is really knowledgeable when it comes to full-stack web applications. I have previously sought his expertise in developing a full stack application to provision cloud resources more efficiently. Not only did he meet the given deadline, but also went the extra mile and added improvements to my UI design. Will definitely work with him in the future!",
+        name: "Liang Shaoze",
+        designation: "Former COO",
+        company: "MAKRISEN",
+        // image: "https://media.licdn.com/dms/image/D5603AQFJQn14UVGc9A/profile-displayphoto-shrink_400_400/0/1692525287384?e=1700092800&v=beta&t=SluAOQ3dsymvsa02QD5T9EDeVs3Z4L3t6NzeuZPGkZY",
+        image: liangshaoze,
     },
 ];
 

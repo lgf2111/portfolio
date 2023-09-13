@@ -52,6 +52,11 @@ import liangshaoze from "./people/liangshaoze.jpeg";
 import lovelace from "./lovelace.jpg";
 import flaskblogsecure from "./flaskblogsecure.png";
 import visioncore from "./visioncore.png";
+import timerplus from "./timerplus.png";
+import djangostore from "./djangostore.png";
+import thesolarsystem from "./thesolarsystem.png";
+import careermeet from "./careermeet.png";
+import lecturesummariser from "./lecturesummariser.png";
 
 export {
   logo,
@@ -110,4 +115,9 @@ export {
   lovelace,
   flaskblogsecure,
   visioncore,
+  timerplus,
+  djangostore,
+  thesolarsystem,
+  careermeet,
+  lecturesummariser,
 };

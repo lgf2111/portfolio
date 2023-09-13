@@ -10,6 +10,35 @@ import {
     mysql,
     git,
     typescript,
+    docker,
+    css,
+    figma,
+    html,
+    javascript,
+    mongodb,
+    nodejs,
+    reactjs,
+    tailwind,
+    threejs,
+    dart,
+    nextjs,
+    vitejs,
+    vuejs,
+    bootstrap,
+    materialui,
+    googlefonts,
+    jquery,
+    django,
+    flask,
+    expressjs,
+    nginx,
+    golang,
+    apache,
+    terraform,
+    azure,
+    alibabacloud,
+
+
 
     nyp,
 
@@ -127,28 +156,170 @@ const educations = [
 const technologies = [
     {
         name: "AWS",
+        type: "cloud",
         icon: aws,
     },
     {
         name: "Python",
+        type: "language",
         icon: python,
     },
     {
         name: "TypeScript",
+        type: "language",
         icon: typescript,
     },
     {
-        name: "Flutter",
-        icon: flutter,
+        name: "Dart",
+        type: "language",
+        icon: dart,
     },
     {
         name: "MySQL",
+        type: "database",
         icon: mysql,
     },
     {
-        name: "git",
+        name: "Azure",
+        type: "cloud",
+        icon: azure,
+    },
+    {
+        name: "Alibaba Cloud",
+        type: "cloud",
+        icon: alibabacloud,
+    },
+    {
+        name: "Go",
+        type: "language",
+        icon: golang,
+    },
+    {
+        name: "Javascript",
+        type: "language",
+        icon: javascript,
+    },
+    {
+        name: "CSS",
+        type: "language",
+        icon: css,
+    },
+    {
+        name: "HTML",
+        type: "language",
+        icon: html,
+    },
+    {
+        name: "Flutter",
+        type: "framework",
+        icon: flutter,
+    },
+    {
+        name: "MongoDB",
+        type: "database",
+        icon: mongodb,
+    },
+    {
+        name: "Django",
+        type: "framework",
+        icon: django,
+    },
+    {
+        name: "Flask",
+        type: "framework",
+        icon: flask,
+    },
+    {
+        name: "React",
+        type: "framework",
+        icon: reactjs,
+    },
+    {
+        name: "Next.js",
+        type: "framework",
+        icon: nextjs,
+    },
+    {
+        name: "Vite",
+        type: "framework",
+        icon: vitejs,
+    },
+    {
+        name: "Vue.js",
+        type: "framework",
+        icon: vuejs,
+    },
+    {
+        name: "Express",
+        type: "framework",
+        icon: expressjs,
+    },
+    {
+        name: "jQuery",
+        type: "framework",
+        icon: jquery,
+    },
+    {
+        name: "Three.js",
+        type: "framework",
+        icon: threejs,
+    },
+    {
+        name: "Terraform",
+        type: "others",
+        icon: terraform,
+    },
+    {
+        name: "Docker",
+        type: "others",
+        icon: docker,
+    },
+    {
+        name: "Nginx",
+        type: "others",
+        icon: nginx,
+    },
+    {
+        name: "Apache",
+        type: "others",
+        icon: apache,
+    },
+    {
+        name: "Git",
+        type: "others",
         icon: git,
     },
+    {
+        name: "Node.js",
+        type: "others",
+        icon: nodejs,
+    },
+    {
+        name: "Figma",
+        type: "others",
+        icon: figma,
+    },
+    {
+        name: "Tailwind CSS",
+        type: "others",
+        icon: tailwind,
+    },
+    {
+        name: "Bootstrap",
+        type: "others",
+        icon: bootstrap,
+    },
+    {
+        name: "MUI",
+        type: "others",
+        icon: materialui,
+    },
+    {
+        name: "Google Fonts",
+        type: "others",
+        icon: googlefonts,
+    },
+
 ];
 
 

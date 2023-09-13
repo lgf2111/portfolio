@@ -13,6 +13,33 @@ import typescript from "./tech/typescript.png";
 import mysql from "./tech/mysql.png";
 import python from "./tech/python.png";
 import flutter from "./tech/flutter.png";
+import docker from "./tech/docker.png";
+import css from "./tech/css.png";
+import figma from "./tech/figma.png";
+import html from "./tech/html.png";
+import javascript from "./tech/javascript.png";
+import mongodb from "./tech/mongodb.png";
+import nodejs from "./tech/nodejs.png";
+import reactjs from "./tech/reactjs.png";
+import tailwind from "./tech/tailwind.png";
+import threejs from "./tech/threejs.svg";
+import nextjs from "./tech/nextjs.svg";
+import vitejs from "./tech/vitejs.svg";
+import vuejs from "./tech/vuejs.svg";
+import bootstrap from "./tech/bootstrap.svg";
+import materialui from "./tech/materialui.svg";
+import googlefonts from "./tech/googlefonts.svg";
+import jquery from "./tech/jquery.svg";
+import django from "./tech/django.svg";
+import flask from "./tech/flask.png";
+import expressjs from "./tech/expressjs.svg";
+import nginx from "./tech/nginx.svg";
+import golang from "./tech/golang.svg";
+import apache from "./tech/apache.png";
+import terraform from "./tech/terraform.svg";
+import azure from "./tech/azure.svg";
+import alibabacloud from "./tech/alibabacloud.png";
+import dart from "./tech/dart.png";
 
 import nyp from "./school/nyp.webp";
 
@@ -44,6 +71,33 @@ export {
   git,
   mysql,
   flutter,
+  docker,
+  css,
+  figma,
+  html,
+  javascript,
+  mongodb,
+  nodejs,
+  reactjs,
+  tailwind,
+  threejs,
+  dart,
+  nextjs,
+  vitejs,
+  vuejs,
+  bootstrap,
+  materialui,
+  googlefonts,
+  jquery,
+  django,
+  flask,
+  expressjs,
+  nginx,
+  golang,
+  apache,
+  terraform,
+  azure,
+  alibabacloud,
 
   pmosg,
 

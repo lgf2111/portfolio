@@ -79,7 +79,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          I have worked on a variety of projects, ranging from scripts to
+          I have worked on a variety of projects, ranging from scripts and
           websites to applications.
         </motion.p>
       </div>
@@ -92,4 +92,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");

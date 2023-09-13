@@ -24,6 +24,12 @@ const Contact = () => {
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
+
+    if (!form.name || !form.email || !form.message) {
+      alert("Please fill in all the fields.");
+      return;
+    }
+
     setLoading(true);
     emailjs
       .send(

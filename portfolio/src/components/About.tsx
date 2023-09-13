@@ -61,29 +61,32 @@ const About = () => {
         I encounter.
         <br />
         <br />
-        My dream is to be able to work as a Software Engineer in one of the
-        FAANG companies one day, at Silicon Valley. Although it is still too
-        early to pursue this dream, I am making my steps to bring my dream
-        closer to me.
+        My aspiration is the become a Software Engineer at one of the renowned
+        FAANG companies in Silicon Valley. While I acknowledge that it's a
+        long-term goal, I'm committed to taking deliberate steps to turn this
+        dream into reality.
         <br />
         <br />
-        Since young, I had always been fascinated about the online world. Since
-        primary school, I had joined ICT club, and it taught me about Game
-        Design, Photography, Videography and Video Editing.
+        My fascination with the digital world ignited from a young age. During
+        my primary school years, I eagerly joined the ICT club, which exposed me
+        to a wide array of digital skills, including Game Design, Photography,
+        Videography, and Video Editing.
         <br />
         <br />
-        After enrolling into Nanyang Polytechnic, that is the first time I get
-        to touch with coding, and although coding is a very new thing to me, I
-        immediately fell in love with it, like love at first sight.
+        Upon enrolling at Nanyang Polytechnic, I had my first encounter with
+        coding. Despite being a completely new concept to me, I experienced an
+        instant and profound connection with it—akin to love at first sight.
         <br />
         <br />
-        At first I still do not know what job should I pursue in the future, I
-        just know that I want to work in IT industry. Under my friends influence
-        I had got myself into pursuing diploma in Cybersecurity rather than
-        Information Technology, after studying for Cybersecurity, although I
-        still am, I had decided that being a Cybersecurity Expert, I want to be
-        a Software Engineer in the future, and therefore here am, striving
-        forward to become a Software Engineer in the future.
+        Initially, I was uncertain about my future career path within the IT
+        industry. While I was certain about my desire to work in this field, I
+        had yet to determine a specific role. Under the influence of my friends,
+        I made the choice to pursue a diploma in Cybersecurity instead of
+        Information Technology. As I delved into Cybersecurity studies, I came
+        to the realization that my true passion lies in becoming a Software
+        Engineer, rather than a Cybersecurity Expert. Hence, I am now dedicated
+        to working towards my goal of becoming a Software Engineer in the
+        future.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

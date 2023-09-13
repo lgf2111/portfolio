@@ -16,10 +16,16 @@ import mysql from "./tech/mysql.png";
 import python from "./tech/python.png";
 import flutter from "./tech/flutter.png";
 
+import nyp from "./school/nyp.webp";
+
 import pmosg from "./company/pmosg.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
+import leroytan from "./people/leroytan.jpeg";
+import chongyangbin from "./people/chongyangbin.jpeg";
+import liangshaoze from "./people/liangshaoze.jpeg";
+
+import lovelace from "./lovelace.jpg";
 import flaskblogsecure from "./flaskblogsecure.png";
 import visioncore from "./visioncore.png";
 
@@ -43,9 +49,17 @@ export {
   git,
   mysql,
   flutter,
+
   pmosg,
   tesla,
-  carrent,
+
+  nyp,
+
+  leroytan,
+  chongyangbin,
+  liangshaoze,
+
+  lovelace,
   flaskblogsecure,
   visioncore,
 };
